@@ -1,0 +1,49 @@
+.container {
+  text-align: center;
+  margin-top: 64px;
+}
+
+body {
+  background-color: rgb(22, 23, 22);
+  color: rgb(218, 215, 219);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.description {
+}
+
+.projects {
+}
+
+.project-item {
+  width: 600px;
+  margin: 0 auto;
+  font-size: 24px;
+  cursor: pointer;
+  display: block;
+}
+
+.project-title {
+  font-size: 60px;
+  transition: all 1s ease-in-out;
+}
+
+.project-item:hover .project-title {
+  transition: all 1s ease-in-out;
+  font-size: 30px;
+}
+
+.description {
+  display: none;
+  font-size: 24px;
+  transition: all 1s ease-in-out;
+}
+
+.project-item:hover .description {
+  transition: all 1s ease-in-out;
+  display: block;
+}
