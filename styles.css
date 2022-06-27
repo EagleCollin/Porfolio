@@ -25,6 +25,7 @@ a {
   font-size: 24px;
   cursor: pointer;
   display: block;
+  height: 250px;
 }
 
 .project-title {
@@ -38,12 +39,12 @@ a {
 }
 
 .description {
-  display: none;
+  opacity: 0;
   font-size: 24px;
   transition: all 1s ease-in-out;
 }
 
 .project-item:hover .description {
   transition: all 1s ease-in-out;
-  display: block;
+  opacity: 1;
 }
