@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./styles.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Esprit Draco Web Development</title>
   </head>
   <body>
@@ -12,6 +13,7 @@
       <div class="projects">
         <div role="list">
           <a role="listitem" class="project-item" href="">
+            <div data-aos="fade-up-right" data-aos-duration="1000">
             <div class="project-title">D&D Character Storage</div>
             <br />
             <span class="description">
@@ -21,11 +23,13 @@
             </span>
           </a>
         </div>
+      </div>
         <a
           role="listitem"
           class="project-item"
           href="https://esprit-dice.netlify.app/"
         >
+        <div data-aos="fade-up-right" data-aos-duration="1000">
           <div class="project-title">Dice Rolling</div>
           <br />
           <span class="description">
@@ -34,8 +38,13 @@
           </span>
         </a>
       </div>
+    </div>
     </section>
 
     <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
