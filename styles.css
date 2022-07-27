@@ -13,12 +13,6 @@ a {
   color: inherit;
 }
 
-.description {
-}
-
-.projects {
-}
-
 .project-item {
   width: 600px;
   margin: 0 auto;
@@ -47,4 +41,24 @@ a {
 .project-item:hover .description {
   transition: all 1s ease-in-out;
   opacity: 1;
+}
+
+.header {
+  margin: auto;
+  width: 50%;
+  padding: 10px;
+  text-align: center;
+  font-size: 50px;
+}
+
+.subheader {
+  font-size: 40px;
+}
+
+.app-page-description {
+  font-size: 25px;
+}
+
+.description-section-title {
+  font-size: 30px;
 }
