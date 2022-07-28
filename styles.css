@@ -1,6 +1,29 @@
 .container {
   text-align: center;
-  margin-top: 64px;
+  margin: 64px;
+}
+
+.topnav {
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  height: 60px;
+}
+
+.topnav-title {
+  line-height: 60px;
+  font-size: 50px;
+}
+
+.navbar-nav {
+  line-height: 60px;
+  display: inline-block;
+  padding: 41px 16px;
+  font-size: 20px;
+}
+
+.spacer {
+  flex: 1 1 auto;
 }
 
 body {

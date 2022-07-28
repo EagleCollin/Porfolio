@@ -4,23 +4,30 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>Esprit Draco Web Development</title>
   </head>
   <body>
     <header>
-      <nav>
-        <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="topnav">   
+        <h1 class="topnav-title">Esprit Draco Web Development</h1>
+        <span class="spacer"></span>
+        <a class="navbar-nav" href="../home">Home</a>
+        <a class="navbar-nav" href="../contact">Contact</a>            
+      </div>
     </header>
     <section class="container">
+      <div class="about">
+        <h1 style="font-size: 80px">About Me</h1>
+        <p></p>
+      </div>
+
+      <br />
+
       <div class="projects">
         <div role="list">
-          <a role="listitem" class="project-item" href="dnd.html">
+          <a role="listitem" class="project-item" href="../dnd">
             <div data-aos="fade-up-right" data-aos-duration="1000">
             <div class="project-title">D&D Character Storage</div>
             <br />
@@ -37,7 +44,7 @@
         <a
           role="listitem"
           class="project-item"
-          href="https://esprit-dice.netlify.app/"
+          href="../dice"
         >
         <div data-aos="fade-up-right" data-aos-duration="1000">
           <div class="project-title">Dice Rolling</div>
@@ -51,7 +58,7 @@
       <a
       role="listitem"
       class="project-item"
-      href="">
+      href="../tour">
       <div data-aos="fade-up-right" data-aos-duration="1000">
         <div class="project-title">Tour of Heroes</div>
         <br />

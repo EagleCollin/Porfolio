@@ -4,11 +4,17 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../styles.css" />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <title>D&D Character Storage</title>
   </head>
   <body>
+    <header>
+      <div class="topnav">
+        <a href="../home">Home</a>
+        <a href="../contact">Contact</a>
+      </div>
+    </header>
     <h1 class="header">D&D Character Storage</h1>
     <section class="container">
       <div>
@@ -30,8 +36,21 @@
         <p class="app-page-description">
           The main sections of the application are the authorization, the api
           calls, and the actual display of the information.
-          <h3 class="description-section-title">Authorization</h3>
-
+        </p>
+        <h3 class="description-section-title">Authorization</h3>
+        <p class="app-page-description">
+          The authorization was setup to allow the user to save their
+          information so they could save the information to come back to later.
+          <br />
+          This application uses Firebase as the database for storing users and
+          their respective character data.
+        </p>
+        <h3 class="description-section-title">API Calls</h3>
+        <p class="app-page-description">
+          The API used for this application only has the baseline Player's
+          Handbook as content for searching and therefore only has the default
+          <br />
+          classes available to select from when selecting a character.
         </p>
       </div>
     </section>
