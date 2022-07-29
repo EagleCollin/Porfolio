@@ -11,48 +11,86 @@
   <body>
     <header>
       <div class="topnav">
-        <a href="../home">Home</a>
-        <a href="../contact">Contact</a>
+        <h1 class="topnav-title">Esprit Draco Web Development</h1>
+        <span class="spacer"></span>
+        <a class="navbar-nav" href="../home">Home</a>
+        <a class="navbar-nav" href="../contact">Contact</a>
+        <a class="navbar-nav" href="../about">About</a>
       </div>
     </header>
     <h1 class="header">D&D Character Storage</h1>
     <section class="container">
       <div>
-        <h2 class="subheader">The Purpose</h2>
-        <p class="app-page-description">
-          I started this application for one main reason: I didn't like being
-          restricted to how many characters I could store at one time on another
-          web application.
-          <br />
-          This led me down the rabbit hole of "How in depth do I want to make
-          this application?" That discovery process brought me to a singular
-          conclusion:
-          <br />
-          I want this application to simplify the process for any wanna be
-          Dungeons and Dragons nerd.
-        </p>
+        <div id="purpose" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="subheader">The Purpose</h2>
+          <p class="app-page-description">
+            I started this application for one main reason: I didn't like being
+            restricted to how many characters I could store at one time on
+            another web application.
+            <br />
+            This led me down the rabbit hole of "How in depth do I want to make
+            this application?" That discovery process brought me to a singular
+            conclusion:
+            <br />
+            I want this application to simplify the character creation process
+            for any wanna be Dungeons and Dragons nerd.
+          </p>
+        </div>
         <br />
-        <h2 class="subheader">Functionality</h2>
-        <p class="app-page-description">
-          The main sections of the application are the authorization, the api
-          calls, and the actual display of the information.
-        </p>
-        <h3 class="description-section-title">Authorization</h3>
-        <p class="app-page-description">
-          The authorization was setup to allow the user to save their
-          information so they could save the information to come back to later.
-          <br />
-          This application uses Firebase as the database for storing users and
-          their respective character data.
-        </p>
-        <h3 class="description-section-title">API Calls</h3>
-        <p class="app-page-description">
-          The API used for this application only has the baseline Player's
-          Handbook as content for searching and therefore only has the default
-          <br />
-          classes available to select from when selecting a character.
-        </p>
+        <div id="functionality" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="subheader">Functionality</h2>
+          <p class="app-page-description">
+            The main sections of the application are the authorization, the api
+            calls, and the actual display of the information.
+          </p>
+        </div>
+        <div id="authorization" data-aos="fade-right" data-aos-duration="1000">
+          <h3 class="description-section-title">Authorization</h3>
+          <p class="app-page-description">
+            The authorization was setup to allow the user to save their
+            information so they could save the information to come back to
+            later.
+            <br />
+            This application uses Firebase as the database for storing users and
+            their respective character data.
+          </p>
+        </div>
+        <div id="api-calls" data-aos="fade-right" data-aos-duration="1000">
+          <h3 class="description-section-title">API Calls</h3>
+          <p class="app-page-description">
+            The API used for this application only has the baseline Player's
+            Handbook as content for searching and therefore only has the default
+            classes
+            <br />
+            available to select from when selecting a character.
+          </p>
+        </div>
+        <div id="data-display" data-aos="fade-right" data-aos-duration="1000">
+          <h3 class="description-section-title">Data Display</h3>
+          <p class="app-page-description">
+            The list of characters associated with a particular user is
+            displayed by looping through the array that is retrieved from
+            Firebase and then setting each anchor tag list item to the value of
+            the character's name, class, and level. Additionally the character
+            sheet display is made entirely with CSS and assigns values based on
+            the selected character's ID which is retrieved from the URL.
+          </p>
+        </div>
+        <div id="styling" data-aos="fade-right" data-aos-duration="1000">
+          <h2 class="subheader">Styling</h2>
+          <p class="app-page-description">
+            The majority of the styling for the application, besides the
+            character sheet display, is made with Angular Material and some
+            slight changes made through personal CSS.
+          </p>
+        </div>
       </div>
     </section>
+
+    <script src="./main.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
